@@ -29,9 +29,10 @@
         "ext-curl": "*",
         "ext-vips": ">=1.0.8",
         "cloudflare/sdk": "^1.1",
-        "guzzlehttp/guzzle": "^6.3",
+        "guzzlehttp/guzzle": "^6.0",
         "jcupitt/vips": "1.0.x-dev",
-        "league/uri": "^5.3",
+        "league/uri": "^6.4",
+        "league/uri-components": "^2.4",
         "predis/predis": "^1.1"
     },
     "require-dev": {
