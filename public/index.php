@@ -118,12 +118,12 @@ function parseUrl(string $url): HttpUri
 {
     // Check for HTTPS origin hosts
     if (strpos($url, 'ssl:') === 0) {
-        return HttpUri::createFromString('https://' . ltrim(substr($url, 4), '/'));
+        return HttpUri::new('https://' . ltrim(substr($url, 4), '/'));
     }
 
     // Check if a valid URL is given. Therefore starting without 'http:' or 'https:'.
     if (strpos($url, 'http:') !== 0 && strpos($url, 'https:') !== 0) {
-        return HttpUri::createFromString('http://' . ltrim($url, '/'));
+        return HttpUri::new('http://' . ltrim($url, '/'));
     }
 
     // Not a valid URL; throw InvalidArgumentException
